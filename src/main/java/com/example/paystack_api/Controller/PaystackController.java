@@ -1,10 +1,11 @@
 package com.example.paystack_api.Controller;
 
 import com.example.paystack_api.Dto.CreatePlanDto;
+import com.example.paystack_api.Dto.InitializePaymentDto;
 import com.example.paystack_api.Response.CreatePlanResponse;
+import com.example.paystack_api.Response.InitializePaymentResponse;
+import com.example.paystack_api.Response.PaymentVerificationResponse;
 import com.example.paystack_api.Service.PaystackService;
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -17,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
     public class PaystackController {
 
         private final PaystackService paystackService;
-        @Autowired
+
         public PaystackController(PaystackService paystackService) {
             this.paystackService = paystackService;
         }
