@@ -13,9 +13,9 @@ import javax.validation.constraints.NotNull;
     @Builder
     public class CreatePlanDto {
 
-        @NotNull(message = "Plan name cannot be null")
-        @JsonProperty("name")
-        private String name;
+//        @NotNull(message = "Plan name cannot be null")
+//        @JsonProperty("name")
+//        private String name;
 
         @NotNull(message = "Interval cannot be null")
         @JsonProperty("interval")
